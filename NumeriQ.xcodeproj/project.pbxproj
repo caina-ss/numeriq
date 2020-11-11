@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -82,7 +82,6 @@
 				453AC1A13B061F10E6F2B86C /* Pods-NumeriQ-NumeriQUITests.debug.xcconfig */,
 				AE4F60682C00AA905B3070E5 /* Pods-NumeriQ-NumeriQUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,8 +117,9 @@
 		E3FED2BD255B602400EA6A1E /* NumeriQ */ = {
 			isa = PBXGroup;
 			children = (
-				E3FED2E4255B62FE00EA6A1E /* Helpers */,
 				E3FED2E1255B62C900EA6A1E /* Extensions */,
+				E3FED2E4255B62FE00EA6A1E /* Helpers */,
+				E3FED2E9255B66F800EA6A1E /* Services */,
 				E3FED2BE255B602400EA6A1E /* AppDelegate.swift */,
 				E3FED2C0255B602400EA6A1E /* SceneDelegate.swift */,
 				E3FED2C2255B602400EA6A1E /* ViewController.swift */,
@@ -155,6 +155,13 @@
 				E3FED2E7255B640300EA6A1E /* NibLoadableView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E3FED2E9255B66F800EA6A1E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,7 +213,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Quebecor;
 				TargetAttributes = {
 					E3FED2BA255B602400EA6A1E = {
@@ -416,6 +423,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -476,6 +484,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

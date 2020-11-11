@@ -8,7 +8,7 @@ target 'NumeriQ' do
   # Pods for NumeriQ
   pod 'Moya/RxSwift', '~> 14.0'
   pod 'Swinject'
-  pod 'SwinjectStoryboard'
+  pod 'SwinjectStoryboard', :git => 'https://github.com/Swinject/SwinjectStoryboard.git', :branch => 'master'
 
   target 'NumeriQUITests' do
     # Pods for testing
