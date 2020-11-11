@@ -60,7 +60,6 @@ extension NewsApi: TargetType {
                       "description": "A former Microsoft software engineer from Ukraine has been sentenced to nine years in prison for stealing more than $10 million in store credit from Microsoft's online store. Ars Technica reports: From 2016 to 2018, Volodymyr Kvashuk worked for Microsoft as a…",
                       "url": "https://yro.slashdot.org/story/20/11/10/2252248/microsoft-engineer-gets-nine-years-for-stealing-10-million-from-microsoft",
                       "urlToImage": "https://a.fsdn.com/sd/topics/crime_64.png",
-                      "publishedAt": "2020-11-10T23:40:00Z",
                       "content": "From 2016 to 2018, Volodymyr Kvashuk worked for Microsoft as a tester, placing mock online orders to make sure everything was working smoothly. The software automatically prevented shipment of physic… [+1421 chars]"
                     }
                   ]
