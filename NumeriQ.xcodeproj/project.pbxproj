@@ -19,6 +19,8 @@
 		E3FED2E3255B62E400EA6A1E /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2E2255B62E400EA6A1E /* UICollectionView.swift */; };
 		E3FED2E6255B631200EA6A1E /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2E5255B631200EA6A1E /* ReusableView.swift */; };
 		E3FED2E8255B640300EA6A1E /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2E7255B640300EA6A1E /* NibLoadableView.swift */; };
+		E3FED2F0255B6BE300EA6A1E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2EF255B6BE300EA6A1E /* String.swift */; };
+		E3FED2F2255B6CB600EA6A1E /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2F1255B6CB600EA6A1E /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		E3FED2E2255B62E400EA6A1E /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		E3FED2E5255B631200EA6A1E /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		E3FED2E7255B640300EA6A1E /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		E3FED2EF255B6BE300EA6A1E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		E3FED2F1255B6CB600EA6A1E /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				E3FED2E2255B62E400EA6A1E /* UICollectionView.swift */,
+				E3FED2EF255B6BE300EA6A1E /* String.swift */,
+				E3FED2F1255B6CB600EA6A1E /* DateFormatter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -353,6 +359,8 @@
 				E3FED2E8255B640300EA6A1E /* NibLoadableView.swift in Sources */,
 				E3FED2C3255B602400EA6A1E /* ViewController.swift in Sources */,
 				E3FED2E6255B631200EA6A1E /* ReusableView.swift in Sources */,
+				E3FED2F0255B6BE300EA6A1E /* String.swift in Sources */,
+				E3FED2F2255B6CB600EA6A1E /* DateFormatter.swift in Sources */,
 				E3FED2BF255B602400EA6A1E /* AppDelegate.swift in Sources */,
 				E3FED2E3255B62E400EA6A1E /* UICollectionView.swift in Sources */,
 				E3FED2C1255B602400EA6A1E /* SceneDelegate.swift in Sources */,
