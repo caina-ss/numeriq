@@ -15,8 +15,8 @@ struct Article: Decodable, Equatable {
     let title: String
     let description: String
     let url: String
-    let urlToImage: String
-    let content: String
+    let urlToImage: String?
+    let content: String?
 }
 
 #if DEBUG
