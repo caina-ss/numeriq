@@ -9,12 +9,18 @@
 import UIKit
 import AlamofireImage
 
-class ArticleCell: UICollectionViewCell {
+class ArticleCell: UICollectionViewCell, ReusableView, NibLoadableView {
     
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var sourceLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+
+        photoView.layer.cornerRadius = 8
+    }
 
     /// Configures the view with a given article.
     /// - Parameter article: The article to populate the view with.
@@ -23,7 +29,7 @@ class ArticleCell: UICollectionViewCell {
         titleLabel.text = article.title
         descriptionLabel.text = article.description
 
-        if let url = URL(string: article.urlToImage) {
+        if let url = URL(string: article.urlToImage ?? "") {
             photoView.af.setImage(withURL: url)
         }
     }
