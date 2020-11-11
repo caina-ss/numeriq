@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		231AF727DF53825B05F3329B /* Pods_NumeriQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64C041E280C4DEAA486AE2C /* Pods_NumeriQ.framework */; };
 		37506D39D531E3145A560C80 /* Pods_NumeriQ_NumeriQUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B6654D6D9CC8F7A882201 /* Pods_NumeriQ_NumeriQUITests.framework */; };
+		84D9ECB02C2D3E1C8A4CF5C6 /* Pods_NumeriQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF789F7E732EEDF1D75C881 /* Pods_NumeriQTests.framework */; };
 		E3FED2BF255B602400EA6A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2BE255B602400EA6A1E /* AppDelegate.swift */; };
 		E3FED2C1255B602400EA6A1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2C0255B602400EA6A1E /* SceneDelegate.swift */; };
 		E3FED2C3255B602400EA6A1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2C2255B602400EA6A1E /* ViewController.swift */; };
 		E3FED2C6255B602400EA6A1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3FED2C4255B602400EA6A1E /* Main.storyboard */; };
 		E3FED2C8255B602700EA6A1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3FED2C7255B602700EA6A1E /* Assets.xcassets */; };
 		E3FED2CB255B602700EA6A1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3FED2C9255B602700EA6A1E /* LaunchScreen.storyboard */; };
-		E3FED2D6255B602700EA6A1E /* NumeriQUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2D5255B602700EA6A1E /* NumeriQUITests.swift */; };
 		E3FED2E3255B62E400EA6A1E /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2E2255B62E400EA6A1E /* UICollectionView.swift */; };
 		E3FED2E6255B631200EA6A1E /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2E5255B631200EA6A1E /* ReusableView.swift */; };
 		E3FED2E8255B640300EA6A1E /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2E7255B640300EA6A1E /* NibLoadableView.swift */; };
+		E3FED2EB255B6A5300EA6A1E /* ArticlesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2EA255B6A5200EA6A1E /* ArticlesService.swift */; };
 		E3FED2EE255B6A8600EA6A1E /* NewsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2ED255B6A8600EA6A1E /* NewsApi.swift */; };
 		E3FED2F0255B6BE300EA6A1E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2EF255B6BE300EA6A1E /* String.swift */; };
 		E3FED2F2255B6CB600EA6A1E /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2F1255B6CB600EA6A1E /* DateFormatter.swift */; };
 		E3FED2F5255B6E9100EA6A1E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2F4255B6E9100EA6A1E /* Article.swift */; };
 		E3FED2F7255B6EE000EA6A1E /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2F6255B6EE000EA6A1E /* Source.swift */; };
+		E3FED308255B716800EA6A1E /* ArticlesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED307255B716800EA6A1E /* ArticlesServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,15 +36,25 @@
 			remoteGlobalIDString = E3FED2BA255B602400EA6A1E;
 			remoteInfo = NumeriQ;
 		};
+		E3FED301255B713300EA6A1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3FED2B3255B602400EA6A1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3FED2BA255B602400EA6A1E;
+			remoteInfo = NumeriQ;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		453AC1A13B061F10E6F2B86C /* Pods-NumeriQ-NumeriQUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumeriQ-NumeriQUITests.debug.xcconfig"; path = "Target Support Files/Pods-NumeriQ-NumeriQUITests/Pods-NumeriQ-NumeriQUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A454C12AEAAB86055E9A2C3 /* Pods-NumeriQTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumeriQTests.release.xcconfig"; path = "Target Support Files/Pods-NumeriQTests/Pods-NumeriQTests.release.xcconfig"; sourceTree = "<group>"; };
 		844B6654D6D9CC8F7A882201 /* Pods_NumeriQ_NumeriQUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NumeriQ_NumeriQUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95438FB41082E623BA86F488 /* Pods-NumeriQ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumeriQ.debug.xcconfig"; path = "Target Support Files/Pods-NumeriQ/Pods-NumeriQ.debug.xcconfig"; sourceTree = "<group>"; };
 		A64C041E280C4DEAA486AE2C /* Pods_NumeriQ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NumeriQ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF789F7E732EEDF1D75C881 /* Pods_NumeriQTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NumeriQTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4F60682C00AA905B3070E5 /* Pods-NumeriQ-NumeriQUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumeriQ-NumeriQUITests.release.xcconfig"; path = "Target Support Files/Pods-NumeriQ-NumeriQUITests/Pods-NumeriQ-NumeriQUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C35856ECE1B2D50431D54E0D /* Pods-NumeriQ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumeriQ.release.xcconfig"; path = "Target Support Files/Pods-NumeriQ/Pods-NumeriQ.release.xcconfig"; sourceTree = "<group>"; };
+		DFA17D1C89A0670FBE346022 /* Pods-NumeriQTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NumeriQTests.debug.xcconfig"; path = "Target Support Files/Pods-NumeriQTests/Pods-NumeriQTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E3FED2BB255B602400EA6A1E /* NumeriQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumeriQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FED2BE255B602400EA6A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3FED2C0255B602400EA6A1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,16 +64,19 @@
 		E3FED2CA255B602700EA6A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3FED2CC255B602700EA6A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3FED2D1255B602700EA6A1E /* NumeriQUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumeriQUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3FED2D5255B602700EA6A1E /* NumeriQUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumeriQUITests.swift; sourceTree = "<group>"; };
 		E3FED2D7255B602700EA6A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3FED2E2255B62E400EA6A1E /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		E3FED2E5255B631200EA6A1E /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		E3FED2E7255B640300EA6A1E /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		E3FED2EA255B6A5200EA6A1E /* ArticlesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesService.swift; sourceTree = "<group>"; };
 		E3FED2ED255B6A8600EA6A1E /* NewsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsApi.swift; sourceTree = "<group>"; };
 		E3FED2EF255B6BE300EA6A1E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E3FED2F1255B6CB600EA6A1E /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		E3FED2F4255B6E9100EA6A1E /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		E3FED2F6255B6EE000EA6A1E /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		E3FED2FC255B713300EA6A1E /* NumeriQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumeriQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3FED300255B713300EA6A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3FED307255B716800EA6A1E /* ArticlesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3FED2F9255B713300EA6A1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D9ECB02C2D3E1C8A4CF5C6 /* Pods_NumeriQTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,6 +114,8 @@
 				C35856ECE1B2D50431D54E0D /* Pods-NumeriQ.release.xcconfig */,
 				453AC1A13B061F10E6F2B86C /* Pods-NumeriQ-NumeriQUITests.debug.xcconfig */,
 				AE4F60682C00AA905B3070E5 /* Pods-NumeriQ-NumeriQUITests.release.xcconfig */,
+				DFA17D1C89A0670FBE346022 /* Pods-NumeriQTests.debug.xcconfig */,
+				5A454C12AEAAB86055E9A2C3 /* Pods-NumeriQTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -100,6 +125,7 @@
 			children = (
 				A64C041E280C4DEAA486AE2C /* Pods_NumeriQ.framework */,
 				844B6654D6D9CC8F7A882201 /* Pods_NumeriQ_NumeriQUITests.framework */,
+				ABF789F7E732EEDF1D75C881 /* Pods_NumeriQTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				E3FED2BD255B602400EA6A1E /* NumeriQ */,
+				E3FED2FD255B713300EA6A1E /* NumeriQTests */,
 				E3FED2D4255B602700EA6A1E /* NumeriQUITests */,
 				E3FED2BC255B602400EA6A1E /* Products */,
 				7D3B6ED754AFC1A5E57B4698 /* Pods */,
@@ -120,6 +147,7 @@
 			children = (
 				E3FED2BB255B602400EA6A1E /* NumeriQ.app */,
 				E3FED2D1255B602700EA6A1E /* NumeriQUITests.xctest */,
+				E3FED2FC255B713300EA6A1E /* NumeriQTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,7 +173,6 @@
 		E3FED2D4255B602700EA6A1E /* NumeriQUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E3FED2D5255B602700EA6A1E /* NumeriQUITests.swift */,
 				E3FED2D7255B602700EA6A1E /* Info.plist */,
 			);
 			path = NumeriQUITests;
@@ -173,6 +200,7 @@
 		E3FED2E9255B66F800EA6A1E /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				E3FED2EA255B6A5200EA6A1E /* ArticlesService.swift */,
 				E3FED2EC255B6A7200EA6A1E /* Providers */,
 			);
 			path = Services;
@@ -193,6 +221,23 @@
 				E3FED2F6255B6EE000EA6A1E /* Source.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E3FED2FD255B713300EA6A1E /* NumeriQTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3FED306255B714C00EA6A1E /* Services */,
+				E3FED300255B713300EA6A1E /* Info.plist */,
+			);
+			path = NumeriQTests;
+			sourceTree = "<group>";
+		};
+		E3FED306255B714C00EA6A1E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E3FED307255B716800EA6A1E /* ArticlesServiceTests.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +282,26 @@
 			productReference = E3FED2D1255B602700EA6A1E /* NumeriQUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		E3FED2FB255B713300EA6A1E /* NumeriQTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3FED303255B713300EA6A1E /* Build configuration list for PBXNativeTarget "NumeriQTests" */;
+			buildPhases = (
+				13EFBF27934C0809B349E0E6 /* [CP] Check Pods Manifest.lock */,
+				E3FED2F8255B713300EA6A1E /* Sources */,
+				E3FED2F9255B713300EA6A1E /* Frameworks */,
+				E3FED2FA255B713300EA6A1E /* Resources */,
+				D4B345BC1DEAF31FB975C30C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3FED302255B713300EA6A1E /* PBXTargetDependency */,
+			);
+			name = NumeriQTests;
+			productName = NumeriQTests;
+			productReference = E3FED2FC255B713300EA6A1E /* NumeriQTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,6 +316,10 @@
 						CreatedOnToolsVersion = 11.7;
 					};
 					E3FED2D0255B602700EA6A1E = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = E3FED2BA255B602400EA6A1E;
+					};
+					E3FED2FB255B713300EA6A1E = {
 						CreatedOnToolsVersion = 11.7;
 						TestTargetID = E3FED2BA255B602400EA6A1E;
 					};
@@ -270,6 +339,7 @@
 			projectRoot = "";
 			targets = (
 				E3FED2BA255B602400EA6A1E /* NumeriQ */,
+				E3FED2FB255B713300EA6A1E /* NumeriQTests */,
 				E3FED2D0255B602700EA6A1E /* NumeriQUITests */,
 			);
 		};
@@ -293,9 +363,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3FED2FA255B713300EA6A1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		13EFBF27934C0809B349E0E6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NumeriQTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3BB6AFCBB198639B90DB353F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,6 +473,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D4B345BC1DEAF31FB975C30C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NumeriQTests/Pods-NumeriQTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NumeriQTests/Pods-NumeriQTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NumeriQTests/Pods-NumeriQTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -391,6 +507,7 @@
 				E3FED2E3255B62E400EA6A1E /* UICollectionView.swift in Sources */,
 				E3FED2F7255B6EE000EA6A1E /* Source.swift in Sources */,
 				E3FED2C1255B602400EA6A1E /* SceneDelegate.swift in Sources */,
+				E3FED2EB255B6A5300EA6A1E /* ArticlesService.swift in Sources */,
 				E3FED2EE255B6A8600EA6A1E /* NewsApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,7 +516,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3FED2D6255B602700EA6A1E /* NumeriQUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3FED2F8255B713300EA6A1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3FED308255B716800EA6A1E /* ArticlesServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +534,11 @@
 			isa = PBXTargetDependency;
 			target = E3FED2BA255B602400EA6A1E /* NumeriQ */;
 			targetProxy = E3FED2D2255B602700EA6A1E /* PBXContainerItemProxy */;
+		};
+		E3FED302255B713300EA6A1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3FED2BA255B602400EA6A1E /* NumeriQ */;
+			targetProxy = E3FED301255B713300EA6A1E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -629,6 +758,48 @@
 			};
 			name = Release;
 		};
+		E3FED304255B713300EA6A1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFA17D1C89A0670FBE346022 /* Pods-NumeriQTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R96USM2G24;
+				INFOPLIST_FILE = NumeriQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quebecor.NumeriQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NumeriQ.app/NumeriQ";
+			};
+			name = Debug;
+		};
+		E3FED305255B713300EA6A1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A454C12AEAAB86055E9A2C3 /* Pods-NumeriQTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R96USM2G24;
+				INFOPLIST_FILE = NumeriQTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.quebecor.NumeriQTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NumeriQ.app/NumeriQ";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -655,6 +826,15 @@
 			buildConfigurations = (
 				E3FED2DE255B602700EA6A1E /* Debug */,
 				E3FED2DF255B602700EA6A1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3FED303255B713300EA6A1E /* Build configuration list for PBXNativeTarget "NumeriQTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3FED304255B713300EA6A1E /* Debug */,
+				E3FED305255B713300EA6A1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

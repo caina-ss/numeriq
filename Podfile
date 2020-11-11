@@ -10,6 +10,13 @@ target 'NumeriQ' do
   pod 'Swinject'
   pod 'SwinjectStoryboard', :git => 'https://github.com/Swinject/SwinjectStoryboard.git', :branch => 'master'
 
+  target 'NumeriQTests' do
+    inherit! :search_paths
+
+    pod 'RxTest', '~> 5'
+    pod 'RxBlocking', '~> 5'
+  end
+
   target 'NumeriQUITests' do
     # Pods for testing
   end

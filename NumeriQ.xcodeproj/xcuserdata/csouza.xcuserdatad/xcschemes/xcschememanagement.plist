@@ -7,7 +7,25 @@
 		<key>NumeriQ.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>10</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E3FED2BA255B602400EA6A1E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3FED2D0255B602700EA6A1E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E3FED2FB255B713300EA6A1E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
