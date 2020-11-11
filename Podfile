@@ -6,6 +6,9 @@ target 'NumeriQ' do
   use_frameworks!
 
   # Pods for NumeriQ
+  pod 'Moya/RxSwift', '~> 14.0'
+  pod 'Swinject'
+  pod 'SwinjectStoryboard'
 
   target 'NumeriQUITests' do
     # Pods for testing
