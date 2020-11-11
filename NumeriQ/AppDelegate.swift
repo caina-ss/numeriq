@@ -7,14 +7,14 @@
 //
 
 import UIKit
+import Swinject
+import SwinjectStoryboard
+import Moya
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         return true
     }
 
@@ -35,3 +35,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension SwinjectStoryboard {
+
+    @objc class func setup() {
+        // Models
+        defaultContainer.register(MoyaProvider<NewsApi>.self) { _ in
+            MoyaProvider<NewsApi>()
+        }
+        defaultContainer.register(ArticlesServiceType.self) { r in
+            ArticlesService(provider: r.resolve(MoyaProvider<NewsApi>.self)!)
+        }
+
+        // View models
+        defaultContainer.register(HomeViewModelType.self) { r in
+            HomeViewModel(articlesService: r.resolve(ArticlesServiceType.self)!)
+        }
+
+        // Views
+        defaultContainer.storyboardInitCompleted(HomeViewController.self) { (r, c) in
+            c.viewModel = r.resolve(HomeViewModelType.self)!
+        }
+    }
+
+}
