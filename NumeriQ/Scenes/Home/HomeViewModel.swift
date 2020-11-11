@@ -54,17 +54,14 @@ extension HomeViewModel {
         isLoading.accept(true)
 
         articlesService
-            .fetchArticles(query: query, fromDate: date)
-            .do(onSuccess: { classes in
+            .fetchArticles(query: query, from: date)
+            .do(onSuccess: { _ in
                 self.isLoading.accept(false)
             }, onError: { error in
                 self.isLoading.accept(false)
             })
             .asDriver(onErrorJustReturn: [])
-            .drive(onNext: { (classes) in
-                self.classes.accept(classes)
-                self.filteredClasses.accept(classes)
-            })
+            .drive(articles)
             .disposed(by: disposeBag)
     }
 
