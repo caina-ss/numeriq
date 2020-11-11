@@ -6,7 +6,9 @@ target 'NumeriQ' do
   use_frameworks!
 
   # Pods for NumeriQ
+  pod 'AlamofireImage', '~> 4.1'
   pod 'Moya/RxSwift', '~> 14.0'
+  pod 'RxCocoa', '~> 5'
   pod 'Swinject'
   pod 'SwinjectStoryboard', :git => 'https://github.com/Swinject/SwinjectStoryboard.git', :branch => 'master'
 
