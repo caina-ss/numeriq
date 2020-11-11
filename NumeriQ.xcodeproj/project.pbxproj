@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		231AF727DF53825B05F3329B /* Pods_NumeriQ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64C041E280C4DEAA486AE2C /* Pods_NumeriQ.framework */; };
-		37506D39D531E3145A560C80 /* Pods_NumeriQ_NumeriQUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 844B6654D6D9CC8F7A882201 /* Pods_NumeriQ_NumeriQUITests.framework */; };
 		84D9ECB02C2D3E1C8A4CF5C6 /* Pods_NumeriQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF789F7E732EEDF1D75C881 /* Pods_NumeriQTests.framework */; };
 		E3FED2BF255B602400EA6A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2BE255B602400EA6A1E /* AppDelegate.swift */; };
 		E3FED2C1255B602400EA6A1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2C0255B602400EA6A1E /* SceneDelegate.swift */; };
@@ -29,16 +28,10 @@
 		E3FED30C255B7A3600EA6A1E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED30B255B7A3600EA6A1E /* HomeViewModel.swift */; };
 		E3FED310255B7C0E00EA6A1E /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED30F255B7C0E00EA6A1E /* ArticleCell.swift */; };
 		E3FED312255B7D8100EA6A1E /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3FED311255B7D8100EA6A1E /* ArticleCell.xib */; };
+		E3FED316255BA40100EA6A1E /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED315255BA40100EA6A1E /* HomeViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E3FED2D2255B602700EA6A1E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E3FED2B3255B602400EA6A1E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E3FED2BA255B602400EA6A1E;
-			remoteInfo = NumeriQ;
-		};
 		E3FED301255B713300EA6A1E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E3FED2B3255B602400EA6A1E /* Project object */;
@@ -66,8 +59,6 @@
 		E3FED2C7255B602700EA6A1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3FED2CA255B602700EA6A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3FED2CC255B602700EA6A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E3FED2D1255B602700EA6A1E /* NumeriQUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumeriQUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3FED2D7255B602700EA6A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3FED2E2255B62E400EA6A1E /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		E3FED2E5255B631200EA6A1E /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		E3FED2E7255B640300EA6A1E /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
@@ -83,6 +74,7 @@
 		E3FED30B255B7A3600EA6A1E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E3FED30F255B7C0E00EA6A1E /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		E3FED311255B7D8100EA6A1E /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
+		E3FED315255BA40100EA6A1E /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,14 +83,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				231AF727DF53825B05F3329B /* Pods_NumeriQ.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E3FED2CE255B602700EA6A1E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				37506D39D531E3145A560C80 /* Pods_NumeriQ_NumeriQUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +125,6 @@
 			children = (
 				E3FED2BD255B602400EA6A1E /* NumeriQ */,
 				E3FED2FD255B713300EA6A1E /* NumeriQTests */,
-				E3FED2D4255B602700EA6A1E /* NumeriQUITests */,
 				E3FED2BC255B602400EA6A1E /* Products */,
 				7D3B6ED754AFC1A5E57B4698 /* Pods */,
 				ADB2A2E05D851592BA207053 /* Frameworks */,
@@ -152,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				E3FED2BB255B602400EA6A1E /* NumeriQ.app */,
-				E3FED2D1255B602700EA6A1E /* NumeriQUITests.xctest */,
 				E3FED2FC255B713300EA6A1E /* NumeriQTests.xctest */,
 			);
 			name = Products;
@@ -174,14 +156,6 @@
 				E3FED2CC255B602700EA6A1E /* Info.plist */,
 			);
 			path = NumeriQ;
-			sourceTree = "<group>";
-		};
-		E3FED2D4255B602700EA6A1E /* NumeriQUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E3FED2D7255B602700EA6A1E /* Info.plist */,
-			);
-			path = NumeriQUITests;
 			sourceTree = "<group>";
 		};
 		E3FED2E1255B62C900EA6A1E /* Extensions */ = {
@@ -232,6 +206,7 @@
 		E3FED2FD255B713300EA6A1E /* NumeriQTests */ = {
 			isa = PBXGroup;
 			children = (
+				E3FED313255BA3F000EA6A1E /* Scenes */,
 				E3FED306255B714C00EA6A1E /* Services */,
 				E3FED300255B713300EA6A1E /* Info.plist */,
 			);
@@ -281,6 +256,22 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		E3FED313255BA3F000EA6A1E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E3FED314255BA3F600EA6A1E /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E3FED314255BA3F600EA6A1E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E3FED315255BA40100EA6A1E /* HomeViewModelTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -302,26 +293,6 @@
 			productName = NumeriQ;
 			productReference = E3FED2BB255B602400EA6A1E /* NumeriQ.app */;
 			productType = "com.apple.product-type.application";
-		};
-		E3FED2D0255B602700EA6A1E /* NumeriQUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E3FED2DD255B602700EA6A1E /* Build configuration list for PBXNativeTarget "NumeriQUITests" */;
-			buildPhases = (
-				3BB6AFCBB198639B90DB353F /* [CP] Check Pods Manifest.lock */,
-				E3FED2CD255B602700EA6A1E /* Sources */,
-				E3FED2CE255B602700EA6A1E /* Frameworks */,
-				E3FED2CF255B602700EA6A1E /* Resources */,
-				749D528BC4CDB0C01264C96C /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E3FED2D3255B602700EA6A1E /* PBXTargetDependency */,
-			);
-			name = NumeriQUITests;
-			productName = NumeriQUITests;
-			productReference = E3FED2D1255B602700EA6A1E /* NumeriQUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 		E3FED2FB255B713300EA6A1E /* NumeriQTests */ = {
 			isa = PBXNativeTarget;
@@ -356,10 +327,6 @@
 					E3FED2BA255B602400EA6A1E = {
 						CreatedOnToolsVersion = 11.7;
 					};
-					E3FED2D0255B602700EA6A1E = {
-						CreatedOnToolsVersion = 11.7;
-						TestTargetID = E3FED2BA255B602400EA6A1E;
-					};
 					E3FED2FB255B713300EA6A1E = {
 						CreatedOnToolsVersion = 11.7;
 						TestTargetID = E3FED2BA255B602400EA6A1E;
@@ -381,7 +348,6 @@
 			targets = (
 				E3FED2BA255B602400EA6A1E /* NumeriQ */,
 				E3FED2FB255B713300EA6A1E /* NumeriQTests */,
-				E3FED2D0255B602700EA6A1E /* NumeriQUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -395,13 +361,6 @@
 				E3FED2CB255B602700EA6A1E /* LaunchScreen.storyboard in Resources */,
 				E3FED2C8255B602700EA6A1E /* Assets.xcassets in Resources */,
 				E3FED2C6255B602400EA6A1E /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E3FED2CF255B602700EA6A1E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,45 +394,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3BB6AFCBB198639B90DB353F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NumeriQ-NumeriQUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		749D528BC4CDB0C01264C96C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NumeriQ-NumeriQUITests/Pods-NumeriQ-NumeriQUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NumeriQ-NumeriQUITests/Pods-NumeriQ-NumeriQUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NumeriQ-NumeriQUITests/Pods-NumeriQ-NumeriQUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8D5263018D93F70557B2AB26 /* [CP] Embed Pods Frameworks */ = {
@@ -556,29 +476,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E3FED2CD255B602700EA6A1E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		E3FED2F8255B713300EA6A1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E3FED308255B716800EA6A1E /* ArticlesServiceTests.swift in Sources */,
+				E3FED316255BA40100EA6A1E /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E3FED2D3255B602700EA6A1E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E3FED2BA255B602400EA6A1E /* NumeriQ */;
-			targetProxy = E3FED2D2255B602700EA6A1E /* PBXContainerItemProxy */;
-		};
 		E3FED302255B713300EA6A1E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = E3FED2BA255B602400EA6A1E /* NumeriQ */;
@@ -760,48 +669,6 @@
 			};
 			name = Release;
 		};
-		E3FED2DE255B602700EA6A1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 453AC1A13B061F10E6F2B86C /* Pods-NumeriQ-NumeriQUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R96USM2G24;
-				INFOPLIST_FILE = NumeriQUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quebecor.NumeriQUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NumeriQ;
-			};
-			name = Debug;
-		};
-		E3FED2DF255B602700EA6A1E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE4F60682C00AA905B3070E5 /* Pods-NumeriQ-NumeriQUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R96USM2G24;
-				INFOPLIST_FILE = NumeriQUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.quebecor.NumeriQUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = NumeriQ;
-			};
-			name = Release;
-		};
 		E3FED304255B713300EA6A1E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DFA17D1C89A0670FBE346022 /* Pods-NumeriQTests.debug.xcconfig */;
@@ -861,15 +728,6 @@
 			buildConfigurations = (
 				E3FED2DB255B602700EA6A1E /* Debug */,
 				E3FED2DC255B602700EA6A1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E3FED2DD255B602700EA6A1E /* Build configuration list for PBXNativeTarget "NumeriQUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E3FED2DE255B602700EA6A1E /* Debug */,
-				E3FED2DF255B602700EA6A1E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

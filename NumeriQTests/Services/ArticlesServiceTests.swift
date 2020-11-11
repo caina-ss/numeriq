@@ -20,7 +20,7 @@ class ArticlesServiceTests: XCTestCase {
     func testProvider_FetchArticles_Success() throws {
         let provider = MoyaProvider<NewsApi>(stubClosure: MoyaProvider.immediatelyStub)
         let dataSource = ArticlesService(provider: provider)
-        let articles = try dataSource.fetchArticles(query: "bitcoin", fromDate: Date()).toBlocking().single()
+        let articles = try dataSource.fetchArticles(query: "bitcoin", from: Date()).toBlocking().single()
 
         XCTAssertEqual(articles.count, 1)
 
@@ -57,7 +57,7 @@ class ArticlesServiceTests: XCTestCase {
         }, stubClosure: MoyaProvider.immediatelyStub)
         let dataSource = ArticlesService(provider: provider)
 
-        XCTAssertThrowsError(try dataSource.fetchArticles(query: "bitcoin", fromDate: Date()).toBlocking().single()) { error in
+        XCTAssertThrowsError(try dataSource.fetchArticles(query: "bitcoin", from: Date()).toBlocking().single()) { error in
             if case let .underlying(err, _) = error as? MoyaError,
                case let .statusCode(response) = err as? MoyaError {
                 XCTAssertEqual(response.statusCode, 500)
