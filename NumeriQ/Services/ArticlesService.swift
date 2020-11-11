@@ -13,8 +13,11 @@ import RxSwift
 protocol ArticlesServiceType {
 
     /// Fetches all available articles for a given query and date.
+    /// - Parameters:
+    ///   - query: A query to filter the search with.
+    ///   - date: A date for limiting the search.
     /// - Returns: A Single containing an array of `Article`s.
-    func fetchArticles(query: String, fromDate: Date) -> Single<[Article]>
+    func fetchArticles(query: String, from date: Date) -> Single<[Article]>
 
 }
 
@@ -30,9 +33,9 @@ class ArticlesService {
 
 extension ArticlesService: ArticlesServiceType {
 
-    func fetchArticles(query: String, fromDate: Date) -> Single<[Article]> {
+    func fetchArticles(query: String, from date: Date) -> Single<[Article]> {
         provider.rx
-            .request(.articles(query: query, fromDate: fromDate))
+            .request(.articles(query: query, fromDate: date))
             .map([Article].self, atKeyPath: "articles")
     }
 

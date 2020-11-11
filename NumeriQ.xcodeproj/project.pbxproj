@@ -12,7 +12,7 @@
 		84D9ECB02C2D3E1C8A4CF5C6 /* Pods_NumeriQTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF789F7E732EEDF1D75C881 /* Pods_NumeriQTests.framework */; };
 		E3FED2BF255B602400EA6A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2BE255B602400EA6A1E /* AppDelegate.swift */; };
 		E3FED2C1255B602400EA6A1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2C0255B602400EA6A1E /* SceneDelegate.swift */; };
-		E3FED2C3255B602400EA6A1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2C2255B602400EA6A1E /* ViewController.swift */; };
+		E3FED2C3255B602400EA6A1E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2C2255B602400EA6A1E /* HomeViewController.swift */; };
 		E3FED2C6255B602400EA6A1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3FED2C4255B602400EA6A1E /* Main.storyboard */; };
 		E3FED2C8255B602700EA6A1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3FED2C7255B602700EA6A1E /* Assets.xcassets */; };
 		E3FED2CB255B602700EA6A1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3FED2C9255B602700EA6A1E /* LaunchScreen.storyboard */; };
@@ -26,6 +26,7 @@
 		E3FED2F5255B6E9100EA6A1E /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2F4255B6E9100EA6A1E /* Article.swift */; };
 		E3FED2F7255B6EE000EA6A1E /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED2F6255B6EE000EA6A1E /* Source.swift */; };
 		E3FED308255B716800EA6A1E /* ArticlesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED307255B716800EA6A1E /* ArticlesServiceTests.swift */; };
+		E3FED30C255B7A3600EA6A1E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED30B255B7A3600EA6A1E /* HomeViewModel.swift */; };
 		E3FED310255B7C0E00EA6A1E /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3FED30F255B7C0E00EA6A1E /* ArticleCell.swift */; };
 		E3FED312255B7D8100EA6A1E /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3FED311255B7D8100EA6A1E /* ArticleCell.xib */; };
 /* End PBXBuildFile section */
@@ -60,7 +61,7 @@
 		E3FED2BB255B602400EA6A1E /* NumeriQ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NumeriQ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FED2BE255B602400EA6A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3FED2C0255B602400EA6A1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E3FED2C2255B602400EA6A1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3FED2C2255B602400EA6A1E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E3FED2C5255B602400EA6A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3FED2C7255B602700EA6A1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3FED2CA255B602700EA6A1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,6 +80,7 @@
 		E3FED2FC255B713300EA6A1E /* NumeriQTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumeriQTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3FED300255B713300EA6A1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3FED307255B716800EA6A1E /* ArticlesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesServiceTests.swift; sourceTree = "<group>"; };
+		E3FED30B255B7A3600EA6A1E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		E3FED30F255B7C0E00EA6A1E /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		E3FED311255B7D8100EA6A1E /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,10 +164,10 @@
 				E3FED2E1255B62C900EA6A1E /* Extensions */,
 				E3FED2E4255B62FE00EA6A1E /* Helpers */,
 				E3FED2F3255B6E6400EA6A1E /* Models */,
+				E3FED309255B76FA00EA6A1E /* Scenes */,
 				E3FED2E9255B66F800EA6A1E /* Services */,
 				E3FED2BE255B602400EA6A1E /* AppDelegate.swift */,
 				E3FED2C0255B602400EA6A1E /* SceneDelegate.swift */,
-				E3FED2C2255B602400EA6A1E /* ViewController.swift */,
 				E3FED2C4255B602400EA6A1E /* Main.storyboard */,
 				E3FED2C7255B602700EA6A1E /* Assets.xcassets */,
 				E3FED2C9255B602700EA6A1E /* LaunchScreen.storyboard */,
@@ -244,9 +246,19 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		E3FED309255B76FA00EA6A1E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E3FED30A255B772000EA6A1E /* Home */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
 		E3FED30A255B772000EA6A1E /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				E3FED2C2255B602400EA6A1E /* HomeViewController.swift */,
+				E3FED30B255B7A3600EA6A1E /* HomeViewModel.swift */,
 				E3FED30D255B7BCF00EA6A1E /* Views */,
 			);
 			path = Home;
@@ -529,13 +541,14 @@
 			files = (
 				E3FED2F5255B6E9100EA6A1E /* Article.swift in Sources */,
 				E3FED2E8255B640300EA6A1E /* NibLoadableView.swift in Sources */,
-				E3FED2C3255B602400EA6A1E /* ViewController.swift in Sources */,
+				E3FED2C3255B602400EA6A1E /* HomeViewController.swift in Sources */,
 				E3FED2E6255B631200EA6A1E /* ReusableView.swift in Sources */,
 				E3FED310255B7C0E00EA6A1E /* ArticleCell.swift in Sources */,
 				E3FED2F0255B6BE300EA6A1E /* String.swift in Sources */,
 				E3FED2F2255B6CB600EA6A1E /* DateFormatter.swift in Sources */,
 				E3FED2BF255B602400EA6A1E /* AppDelegate.swift in Sources */,
 				E3FED2E3255B62E400EA6A1E /* UICollectionView.swift in Sources */,
+				E3FED30C255B7A3600EA6A1E /* HomeViewModel.swift in Sources */,
 				E3FED2F7255B6EE000EA6A1E /* Source.swift in Sources */,
 				E3FED2C1255B602400EA6A1E /* SceneDelegate.swift in Sources */,
 				E3FED2EB255B6A5300EA6A1E /* ArticlesService.swift in Sources */,
